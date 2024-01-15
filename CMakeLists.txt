@@ -1,5 +1,4 @@
 # Set CMake minimum version to currently using
-# Required for CUDA find package
 cmake_minimum_required( VERSION 3.26 )
 
 # Setup Project name

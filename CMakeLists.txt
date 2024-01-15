@@ -7,6 +7,9 @@ project( Bakery
          VERSION 0.0.1
          LANGUAGES CXX )
 
+# Set C++ Standard to C++14
+set( CMAKE_CXX_STANDARD 14 )
+
 # Use solution folders
 set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 
@@ -20,8 +23,15 @@ set( CMAKE_MODULE_PATH
      ${CMAKE_CURRENT_SOURCE_DIR}/cmake
      CACHE PATH "" FORCE )
 
-# # Include modules required in this project
-# add_subdirectory( modules )
+# Fetch BinLog
+include( FetchContent )
+FetchContent_Declare( binlog
+                      GIT_REPOSITORY https://github.com/morganstanley/binlog.git
+                      GIT_TAG 4cd8f78 )
+FetchContent_MakeAvailable( binlog )
+
+# Include modules required in this project
+add_subdirectory( modules )
 
 # #Include apps required in this project
 # add_subdirectory( apps )

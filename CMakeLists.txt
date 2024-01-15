@@ -33,5 +33,5 @@ FetchContent_MakeAvailable( binlog )
 # Include modules required in this project
 add_subdirectory( modules )
 
-# #Include apps required in this project
-# add_subdirectory( apps )
+#Include apps required in this project
+add_subdirectory( apps )

@@ -1,6 +1,8 @@
 #pragma once
 
-class Baz {
+#include <export.hpp>
+
+class BAZ_API Baz {
 public:
 	Baz();
 	~Baz();

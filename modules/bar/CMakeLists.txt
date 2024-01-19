@@ -3,6 +3,11 @@ add_library( bar
              ${CMAKE_CURRENT_SOURCE_DIR}/inc/bar.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/bar.cpp )
 
+# Export libraries
+target_compile_definitions( bar
+                            PRIVATE
+                            BAR_EXPORT )
+
 target_include_directories( bar
                             PRIVATE
                             ${CMAKE_CURRENT_SOURCE_DIR}/inc )

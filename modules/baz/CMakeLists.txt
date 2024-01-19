@@ -3,6 +3,11 @@ add_library( baz
              ${CMAKE_CURRENT_SOURCE_DIR}/inc/baz.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/baz.cpp )
 
+# Export libraries
+target_compile_definitions( baz
+                            PRIVATE
+                            BAZ_EXPORT )
+
 target_include_directories( baz
                             PRIVATE
                             ${CMAKE_CURRENT_SOURCE_DIR}/inc )

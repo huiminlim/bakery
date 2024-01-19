@@ -1,6 +1,8 @@
 #pragma once
 
-class Foo {
+#include <export.hpp>
+
+class FOO_API Foo {
 public:
 	Foo();
 	~Foo();

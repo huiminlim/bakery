@@ -1,6 +1,8 @@
 #pragma once
 
-class Bar {
+#include <export.hpp>
+
+class BAR_API Bar {
 public:
 	Bar();
 	~Bar();

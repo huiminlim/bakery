@@ -3,6 +3,11 @@ add_library( foo
              ${CMAKE_CURRENT_SOURCE_DIR}/inc/foo.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/foo.cpp )
 
+# Export libraries
+target_compile_definitions( foo
+                            PRIVATE
+                            FOO_EXPORT )
+
 target_include_directories( foo
                             PRIVATE
                             ${CMAKE_CURRENT_SOURCE_DIR}/inc )

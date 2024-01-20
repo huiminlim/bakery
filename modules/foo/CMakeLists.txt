@@ -1,6 +1,6 @@
 add_library( foo
              SHARED
-             ${CMAKE_CURRENT_SOURCE_DIR}/inc/foo.hpp
+             ${CMAKE_CURRENT_SOURCE_DIR}/inc/foo/foo.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/foo.cpp )
 
 # Export libraries

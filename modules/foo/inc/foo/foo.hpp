@@ -1,6 +1,6 @@
 #pragma once
 
-#include <export.hpp>
+#include <foo/export.hpp>
 
 class FOO_API Foo {
 public:

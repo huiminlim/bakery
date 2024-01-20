@@ -1,4 +1,4 @@
-#include <Baz.hpp>
+#include <baz/baz.hpp>
 
 #include <iostream>
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <export.hpp>
+#include <baz/export.hpp>
 
 class BAZ_API Baz {
 public:

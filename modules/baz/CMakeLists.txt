@@ -1,6 +1,6 @@
 add_library( baz
              SHARED
-             ${CMAKE_CURRENT_SOURCE_DIR}/inc/baz.hpp
+             ${CMAKE_CURRENT_SOURCE_DIR}/inc/baz/baz.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/baz.cpp )
 
 # Export libraries

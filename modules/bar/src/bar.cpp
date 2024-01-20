@@ -1,4 +1,4 @@
-#include <bar.hpp>
+#include <bar/bar.hpp>
 
 #include <iostream>
 

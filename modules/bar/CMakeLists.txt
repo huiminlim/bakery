@@ -1,6 +1,6 @@
 add_library( bar
              SHARED
-             ${CMAKE_CURRENT_SOURCE_DIR}/inc/bar.hpp
+             ${CMAKE_CURRENT_SOURCE_DIR}/inc/bar/bar.hpp
              ${CMAKE_CURRENT_SOURCE_DIR}/src/bar.cpp )
 
 # Export libraries
